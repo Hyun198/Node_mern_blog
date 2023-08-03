@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-mongoose.connect('mongodb+srv://hwn123h:RoDh6z68mUUcvQln@cluster0.yxjcyln.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodburl');
 
 
 app.post('/register', async (req, res) => {
